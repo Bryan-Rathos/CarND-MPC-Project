@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		86E5346174934788B0854B36 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A344FA9870034F848EBE4026 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				CAEDC68E3B86438381E2B0A9 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		951DE389E8E14482A9177C0E /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7388F2DD4D364C11A8383BFF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				012C81983A384ADBB948B95A /* CMake Rules */,
+			);
+			dependencies = (
+				72C9401759D5445C8364D290 /* PBXTargetDependency */,
+				87A8398997F54583AE03DA04 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		07DA350F77EE4245AEA71143 /* /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 5EEA9FF386BA4C2193BBCE49 /* /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/main.cpp */; };
+		427AEA42D1A94AE18016C2B7 /* /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9D373F5C7F13467BA84CFE36 /* /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/CMakeLists.txt */; };
+		BBCFE9E449D34BBF9EFC8C71 /* /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/MPC.cpp */ = {isa = PBXBuildFile; fileRef = 6F25C72DE244470CA15DBFA3 /* /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/MPC.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0F4DFD8FAD5243AF892AF089 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		74CF726D6B824E72801A913F /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		96CB42C0D8F84B208E448B07 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		F491BC40673A497BAC790B48 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		25A5C18551D342E4A5E71B42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0752BF9C5BB4946BC99443B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86E5346174934788B0854B36;
+			remoteInfo = ZERO_CHECK;
+		};
+		5327A6BAAE124C4BB8200EEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0752BF9C5BB4946BC99443B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86E5346174934788B0854B36;
+			remoteInfo = ZERO_CHECK;
+		};
+		DE3122880A34401B97CCE898 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0752BF9C5BB4946BC99443B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FEDBB51F49C403FB27DFF81;
+			remoteInfo = mpc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		565CCFE4C0B5463189E5AFA2 /* /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5EEA9FF386BA4C2193BBCE49 /* /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		6F25C72DE244470CA15DBFA3 /* /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/MPC.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MPC.cpp; path = src/MPC.cpp; sourceTree = SOURCE_ROOT; };
+		9D373F5C7F13467BA84CFE36 /* /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C6F40F352FEE43B3B27862D4 /* mpc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = mpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09FEABAF4364B4B9CBE6BF4 /* /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		002ECB0E84154EAEA6D126C5 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				4E5D13DB30C7425A8B44D706 /* CMake Rules */,
+				F09FEABAF4364B4B9CBE6BF4 /* /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		4D81E76479154EFB9E78AB40 = {
+			isa = PBXGroup;
+			children = (
+				630DE422788C445A9DFAA38A /* mpc */,
+				79BC42B5A2894CE68C26AF5D /* ALL_BUILD */,
+				002ECB0E84154EAEA6D126C5 /* ZERO_CHECK */,
+				875EBD0DFD264D369F83270B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E5D13DB30C7425A8B44D706 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		630DE422788C445A9DFAA38A /* mpc */ = {
+			isa = PBXGroup;
+			children = (
+				A5BABA3697974852837960C5 /* Source Files */,
+				9D373F5C7F13467BA84CFE36 /* /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/CMakeLists.txt */,
+			);
+			name = mpc;
+			sourceTree = "<group>";
+		};
+		79BC42B5A2894CE68C26AF5D /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				98949F13AC9547E3809379DB /* CMake Rules */,
+				565CCFE4C0B5463189E5AFA2 /* /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		875EBD0DFD264D369F83270B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6F40F352FEE43B3B27862D4 /* mpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98949F13AC9547E3809379DB /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		A5BABA3697974852837960C5 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F25C72DE244470CA15DBFA3 /* /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/MPC.cpp */,
+				5EEA9FF386BA4C2193BBCE49 /* /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FEDBB51F49C403FB27DFF81 /* mpc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1D78CEC2E124DB882B4D6A1 /* Build configuration list for PBXNativeTarget "mpc" */;
+			buildPhases = (
+				F65B0FEFE44541AB90199E0E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C137737F3B648B880765598 /* PBXTargetDependency */,
+			);
+			name = mpc;
+			productName = mpc;
+			productReference = C6F40F352FEE43B3B27862D4 /* mpc */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0752BF9C5BB4946BC99443B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0820;
+			};
+			buildConfigurationList = 659607E7AF5F47C68C1023CB /* Build configuration list for PBXProject "MPC" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				96CB42C0D8F84B208E448B07 /* Debug */,
+				F491BC40673A497BAC790B48 /* Release */,
+				0F4DFD8FAD5243AF892AF089 /* MinSizeRel */,
+				74CF726D6B824E72801A913F /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 4D81E76479154EFB9E78AB40;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				951DE389E8E14482A9177C0E /* ALL_BUILD */,
+				86E5346174934788B0854B36 /* ZERO_CHECK */,
+				8FEDBB51F49C403FB27DFF81 /* mpc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		012C81983A384ADBB948B95A /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode -f /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		5AC6638E42E04428A55B1BB5 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		CAEDC68E3B86438381E2B0A9 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode -f /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		E32FEDD447FF461C826A4296 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F65B0FEFE44541AB90199E0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBCFE9E449D34BBF9EFC8C71 /* /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/MPC.cpp */,
+				07DA350F77EE4245AEA71143 /* /Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C137737F3B648B880765598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86E5346174934788B0854B36 /* ZERO_CHECK */;
+			targetProxy = 25A5C18551D342E4A5E71B42 /* PBXContainerItemProxy */;
+		};
+		72C9401759D5445C8364D290 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FEDBB51F49C403FB27DFF81 /* mpc */;
+			targetProxy = DE3122880A34401B97CCE898 /* PBXContainerItemProxy */;
+		};
+		87A8398997F54583AE03DA04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86E5346174934788B0854B36 /* ZERO_CHECK */;
+			targetProxy = 5327A6BAAE124C4BB8200EEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		035B3CA323434969BEFA636B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/Eigen-3.3",/usr/local/opt/openssl/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		0F8EC4FB2F1846ADB4B8255E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/Eigen-3.3",/usr/local/opt/openssl/include);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.14.1/lib";
+				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.14.1/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/Cellar/libuv/1.14.1/lib";
+				OTHER_CPLUSPLUSFLAGS = "-Wall        -DNDEBUG -I/usr/local/include -I/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/Eigen-3.3 -I/usr/local/opt/openssl/include    -std=c++11 -O3";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lipopt -lz -lssl -luv -luWS";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = mpc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1605DB1D9AC4486B8AE67421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/Eigen-3.3",/usr/local/opt/openssl/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		1EDE511CF2E24D918FC11765 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/Eigen-3.3",/usr/local/opt/openssl/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		2F407C2C602D46849B32D5DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/Eigen-3.3",/usr/local/opt/openssl/include);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.14.1/lib";
+				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.14.1/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/Cellar/libuv/1.14.1/lib";
+				OTHER_CPLUSPLUSFLAGS = "-Wall     -DNDEBUG -I/usr/local/include -I/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/Eigen-3.3 -I/usr/local/opt/openssl/include    -std=c++11 -O3";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lipopt -lz -lssl -luv -luWS";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = mpc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		4E21C0C51B4B40E89AE071AB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/Eigen-3.3",/usr/local/opt/openssl/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5421DA9B2F3843A18CD0AF4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode/build";
+			};
+			name = Release;
+		};
+		5A6EE6F867DA42CB99461A08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/Eigen-3.3",/usr/local/opt/openssl/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		5E8398F4ACC3417C887180A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/Eigen-3.3",/usr/local/opt/openssl/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		61CC56B0A90C47A9A270C622 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/Eigen-3.3",/usr/local/opt/openssl/include);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.14.1/lib";
+				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.14.1/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/Cellar/libuv/1.14.1/lib";
+				OTHER_CPLUSPLUSFLAGS = "-Wall     -DNDEBUG -I/usr/local/include -I/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/Eigen-3.3 -I/usr/local/opt/openssl/include    -std=c++11 -O3";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lipopt -lz -lssl -luv -luWS";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = mpc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		78388A2A3A2B4CDF81985772 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode/build";
+			};
+			name = RelWithDebInfo;
+		};
+		96E470736D784F66B8A164CD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode/build";
+			};
+			name = MinSizeRel;
+		};
+		B15BB1331B3D47B5B61BB119 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/Eigen-3.3",/usr/local/opt/openssl/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		D1D76E10365F4036AFC4D5C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode/build";
+			};
+			name = Debug;
+		};
+		DF1734AC4C804FB9A849D92C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/Eigen-3.3",/usr/local/opt/openssl/include);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.14.1/lib";
+				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.14.1/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/Cellar/libuv/1.14.1/lib";
+				OTHER_CPLUSPLUSFLAGS = "-Wall    -I/usr/local/include -I/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/Eigen-3.3 -I/usr/local/opt/openssl/include    -std=c++11 -O3";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lipopt -lz -lssl -luv -luWS";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = mpc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		E000BDA5B05D4746A701AF5F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/src/Eigen-3.3",/usr/local/opt/openssl/include);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		659607E7AF5F47C68C1023CB /* Build configuration list for PBXProject "MPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1D76E10365F4036AFC4D5C7 /* Debug */,
+				5421DA9B2F3843A18CD0AF4C /* Release */,
+				96E470736D784F66B8A164CD /* MinSizeRel */,
+				78388A2A3A2B4CDF81985772 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7388F2DD4D364C11A8383BFF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E8398F4ACC3417C887180A4 /* Debug */,
+				1605DB1D9AC4486B8AE67421 /* Release */,
+				035B3CA323434969BEFA636B /* MinSizeRel */,
+				B15BB1331B3D47B5B61BB119 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A344FA9870034F848EBE4026 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A6EE6F867DA42CB99461A08 /* Debug */,
+				1EDE511CF2E24D918FC11765 /* Release */,
+				E000BDA5B05D4746A701AF5F /* MinSizeRel */,
+				4E21C0C51B4B40E89AE071AB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B1D78CEC2E124DB882B4D6A1 /* Build configuration list for PBXNativeTarget "mpc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF1734AC4C804FB9A849D92C /* Debug */,
+				2F407C2C602D46849B32D5DC /* Release */,
+				61CC56B0A90C47A9A270C622 /* MinSizeRel */,
+				0F8EC4FB2F1846ADB4B8255E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0752BF9C5BB4946BC99443B /* Project object */;
+}

@@ -1,0 +1,3 @@
+/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode/CMakeFiles/mpc.dir
+/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode/CMakeFiles/ALL_BUILD.dir
+/Users/BryansMac/SelfDrivingCar-ND/Term-2/CarND-MPC-Project/xcode/CMakeFiles/ZERO_CHECK.dir

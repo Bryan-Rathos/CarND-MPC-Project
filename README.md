@@ -2,6 +2,11 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ---
+## The Model
+The model used for this project is the Kinematic Bicycle Model which comprises of the following states:
+* x - the car's x position
+* 
+
 
 ## Dependencies
 
