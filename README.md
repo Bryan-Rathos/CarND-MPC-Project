@@ -3,10 +3,30 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 ## The Model
+### States
 The model used for this project is the Kinematic Bicycle Model which comprises of the following states:
-* x - the car's x position
-* 
+* x - the vehicle's x position.
+* y - the vehicle's y position
+* ψ(psi) - orientation of the vehicle (in radians).
+* v - The current velocity.
+* cte - The Cross-Track-Error.
+* epsi - The orientation error.
 
+### Actuators
+Actuator outputs are acceleration (a) and steering angle (delta).
+
+### Update Equations
+The model combines the states and the actuatoions of the previopus time step to predict the state at the current time step by using the update equations as shown below:
+![equations](./update_eq.png)
+
+## Timestep Length and Elapsed Duration (N & dt)
+I wanted to choode the (N x dt) product as 1 sec beacuse the environment/horizon won't change much in 1 sec. So after choosing various combinations like (8,0.12), (7,0.14) and (10,0.15) I found (10,0.1)  to work the best. The model determines the correct trajectory for 1 second intervals. Also (10,01) values work better with the 100ms latency compared to the other values.
+
+## Polynomial Fitting and MPC Preprocessing
+The waypoints are transformed from global coordinate system to vehicle coordinate system. It simplifies the polynomial fitting process since the the vehicle's x and y coordinate are at the origin (0,0) and also the orientation is zero.
+
+## Model Predictive Control with Latency
+The original kinematic equations depend on actuations from previous timestep. With an additional 100ms latency, which is also the timestep interval, the actuation is applied after another time step. So to account for this I have used the actuations from the previous timestep (MPC.cpp 125-126). Further, penalizing the cost parameters appropriately helps improving performance. I first started penalizing `cte` and `epsi` to check performnce by multiplying the cte^2 by 1000 and epsi^2 by 1 and ran it in the simulator, but when I reversed it I found that the car stayed much closer to the yellow trajectory (MPC.cpp 66-67). Therefore, I chose the epsi factor to be greater than cte factor. Further, for smooth turning and acceleration I penalized the sequential steering and accelertion actuation (MPC.cpp 81-82). I found reducing the use of actuators helpful for the vehicle to have a smoother ride at the same time it is important to consider teh actuations, hence i penalized them by a small amount (MPC.cpp 74-75).
 
 ## Dependencies
 
