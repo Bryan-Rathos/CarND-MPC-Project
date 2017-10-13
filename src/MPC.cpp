@@ -23,7 +23,7 @@ const double Lf = 2.67;
 
 // Both the reference cross track and orientation errors are 0.
 // The reference velocity is set to 40 mph.
-double ref_v = 55;
+double ref_v = 60;
 
 // The solver takes all the state variables and actuator
 // variables in a singular vector. Thus, we should to establish
@@ -63,23 +63,23 @@ class FG_eval
     // The part of the cost based on the reference state.
     for(int t = 0; t < N; t++)
     {
-      fg[0] += 10 * CppAD::pow(vars[cte_start + t], 2);
-      fg[0] += 3500 * CppAD::pow(vars[epsi_start + t], 2);
+      fg[0] += 10 * CppAD::pow(vars[cte_start + t], 2); //10     10
+      fg[0] += 3500 * CppAD::pow(vars[epsi_start + t], 2);  //3500      4500
       fg[0] += CppAD::pow(vars[v_start + t] - ref_v, 2);
     }
     
     // Minimize the use of actuators.
     for(int t = 0; t < N - 1; t++)
     {
-      fg[0] += 10 * CppAD::pow(vars[delta_start + t], 2);
-      fg[0] += 3 * CppAD::pow(vars[a_start + t], 2);
+      fg[0] += 900 * CppAD::pow(vars[delta_start + t], 2); //10       4000
+      fg[0] += 2 * CppAD::pow(vars[a_start + t], 2);  //3        2
     }
     
     // Minimize the value gap between sequential actuations.
     for(int t = 0; t < N - 2; t++)
     {
-      fg[0] += 700 * CppAD::pow(vars[delta_start + t + 1] - vars[delta_start + t], 2);
-      fg[0] += 150 * CppAD::pow(vars[a_start + t + 1] - vars[a_start + t], 2);
+      fg[0] += 6000 * CppAD::pow(vars[delta_start + t + 1] - vars[delta_start + t], 2);  //700      8000
+      fg[0] += 50 * CppAD::pow(vars[a_start + t + 1] - vars[a_start + t], 2);  //150         20
     }
     
     // Setup Constraints
@@ -120,8 +120,7 @@ class FG_eval
       AD<double> a0 = vars[a_start + t - 1];
       
       if (t > 1)
-      {   
-        // use previous actuation to compensate for latency
+      {
         a0 = vars[a_start + t - 2];
         delta0 = vars[delta_start + t - 2];
       }
@@ -150,13 +149,14 @@ vector<double> MPC::Solve(Eigen::VectorXd state, Eigen::VectorXd coeffs)
   bool ok = true;
   //size_t i;
   typedef CPPAD_TESTVECTOR(double) Dvector;
-
+  
   double x = state[0];
   double y = state[1];
   double psi = state[2];
   double v = state[3];
   double cte = state[4];
   double epsi = state[5];
+  
   // TODO: Set the number of model variables (includes both states and inputs).
   // For example: If the state is a 4 element vector, the actuators is a 2
   // element vector and there are 10 timesteps. The number of variables is:
@@ -192,6 +192,7 @@ vector<double> MPC::Solve(Eigen::VectorXd state, Eigen::VectorXd coeffs)
     vars_lowerbound[i] = -1.0e19;
     vars_upperbound[i] = 1.0e19;
   }
+  
   
   // The upper and lower limits of delta are set to -25 and 25
   // degrees (values in radians).
@@ -272,6 +273,7 @@ vector<double> MPC::Solve(Eigen::VectorXd state, Eigen::VectorXd coeffs)
   //
   // {...} is shorthand for creating a vector, so auto x1 = {1.0,2.0}
   // creates a 2 element double vector.
+  
   vector<double> result;
   
   result.push_back(solution.x[delta_start]);

@@ -106,8 +106,9 @@ int main()
           double psi = j[1]["psi"];
           double v = j[1]["speed"];
 
-          double steer_value = j[1]["steering_angle"];
-          double throttle_value = j[1]["throttle"];
+          double delta = j[1]["steering_angle"];
+          double acc = j[1]["throttle"];
+          
           /*
           * TODO: Calculate steering angle and throttle using MPC.
           *
@@ -118,7 +119,7 @@ int main()
           vector<double> waypoints_x;
           vector<double> waypoints_y;
           
-          // transform waypoints to be from car's perspective
+          // Transform waypoints to car's perspective
           // this means we can consider px = 0, py = 0, and psi = 0
           // greatly simplifying future calculations
           for (int i = 0; i < ptsx.size(); i++)
@@ -136,19 +137,26 @@ int main()
 
           auto coeffs = polyfit(waypoints_x_eig, waypoints_y_eig, 3);
           double cte = polyeval(coeffs, 0);  // px = 0, py = 0
-          double epsi = -atan(coeffs[1]);  // p
+          double epsi = -atan(coeffs[1]);  // px = 0, psi = 0
           
+          double latency = 0.1;
+          double Lf = 2.67;
           Eigen::VectorXd state(6);
+          
+          cte += v * sin(epsi) * latency;
+          epsi += v * (delta/Lf) * latency;
+          v += acc * latency;
+          
           state << 0, 0, 0, v, cte, epsi;
           auto vars = mpc.Solve(state, coeffs);
-          steer_value = vars[0];
-          throttle_value = vars[1];
+          delta = vars[0];
+          acc = vars[1];
           
           json msgJson;
           // NOTE: Remember to divide by deg2rad(25) before you send the steering value back.
           // Otherwise the values will be in between [-deg2rad(25), deg2rad(25] instead of [-1, 1].
-          msgJson["steering_angle"] = -steer_value / (deg2rad(25));
-          msgJson["throttle"] = throttle_value;
+          msgJson["steering_angle"] = -delta / (deg2rad(25));
+          msgJson["throttle"] = acc;
 
           //Display the MPC predicted trajectory 
           vector<double> mpc_x_vals;
